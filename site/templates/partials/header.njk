@@ -1,6 +1,7 @@
 <header class="page-header">
   <div class="container">
     <div class="page-header__content">
+
       <div>
         <a href="/">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 26.6" class="logo" width="8rem" fill="var(--logo-color, #000)">
@@ -8,20 +9,14 @@
           </svg>
         </a>
       </div>
+
        <nav>
         <ul role="list" class="nav-list flex-group">
-          <li>
-            <a {% if page.fileSlug === '' %}aria-current="page"{% endif %} href="/">
-              Home
-            </a>
-          </li>
-          <li>
-            <a {% if page.fileSlug === 'about' %}aria-current="page"{% endif %} href="/about/">
-              About
-            </a>
-          </li>
+          <li><a {% if page.fileSlug === '' %}aria-current="page"{% endif %} href="/">Home</a></li>
+          <li><a {% if page.fileSlug === 'countdown' %}aria-current="page"{% endif %} href="/countdown/">Countdown App</a></li>
         </ul>
       </nav>
+
     </div>
   </div>
 </header>
