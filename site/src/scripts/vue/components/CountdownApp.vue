@@ -1,6 +1,6 @@
 <template>
     <div class="countdown">
-        <h1>{{ seriesName }}</h1>
+        <p class="countdown-title">{{ seriesName }}</p>
         <div class="timer">
             <span>{{ time.days }}d : </span>
             <span>{{ time.hours }}h : </span>
