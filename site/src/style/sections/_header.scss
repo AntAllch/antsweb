@@ -5,11 +5,19 @@
   /////////////////////// */
 
 .page-header {
-  padding: 2em 0;
+  padding: 2.5em 0;
+  // border: 2px solid red;
+  margin-bottom: 3rem;
 
   &__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    // border: 2px solid yellow;
+  }
+
+  .logo{
+    width: 100px;
   }
   
 }
@@ -17,23 +25,25 @@
 .nav-list {
   margin: 0;
   padding: 0;
-  font-family: $ff-heading;
+  // font-family: $ff-heading;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 
   a {
-    color: $clr-primary;
+    color: rgba(255, 255, 255, 0.2);
     text-decoration: none;
+    transition: color 150ms ease-in-out;
 
     &:focus,
     &:hover {
-      text-decoration: underline;
+      color: white;
     }
   }
 }
 
 [aria-current="page"] {
   font-weight: bold;
+  color: white !important;
 }
 
 @media screen and (max-width: 768px){

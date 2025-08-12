@@ -4,7 +4,12 @@
   General styling
   /////////////////////// */
 
-body {
-  font-family: $ff-body;
-  font-size: $fs-6;
+// body {
+//   font-family: "fabiolo-regular";
+//   font-size: $fs-6;
+// }
+
+.container{
+  width: min(95%, 1100px);
+  margin: 0 auto;
 }

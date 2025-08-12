@@ -6,7 +6,12 @@ mix
     .copyDirectory('./site/_redirects', 'public/')
 
     // JavaScript
-    .js('./site/src/scripts/app.js', 'public/scripts').setPublicPath('public')
+    .js('./site/src/scripts/app.js', 'public/scripts').vue().setPublicPath('public')
 
     // CSS
     .sass('./site/src/style/style.scss', 'public/style/style.css')
+    .webpackConfig({
+        stats: {
+            children: false
+        }
+    })
